@@ -29,5 +29,6 @@ jobs:
     - name: Install surge
       run: npm install -g surge 
     - name: Run Surge
-       surge ./ zakria.surge.sh --tokken ${(secrets.CODE)}
+      run: surge ./ zakria.surge.sh --tokken ${(secrets.CODE)} 
+       
             
